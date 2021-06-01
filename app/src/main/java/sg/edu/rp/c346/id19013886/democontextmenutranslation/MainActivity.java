@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreateContextMenu(menu, v, menuInfo);
 
         if (v == tvTranslatedText) {
-            wordClicked = "hello";
+            wordClicked = "1st";
         } else if (v == tvTranslatedText2) {
-            wordClicked = "bye";
+            wordClicked = "2nd";
         }
 
         menu.add(0, 0, 0, "English");
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //        return super.onContextItemSelected(item); //pass menu item to the superclass implementation
 
-        if (wordClicked.equalsIgnoreCase("hello")) {
+        if (wordClicked.equalsIgnoreCase("1st")) {
             if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
                 tvTranslatedText.setText("Hello");
                 return true; //menu item successfully handled
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 tvTranslatedText.setText("Ciao");
                 return true; //menu item successfully handled
             }
-        } else if (wordClicked.equalsIgnoreCase(("bye"))) {
+        } else if (wordClicked.equalsIgnoreCase(("2nd"))) {
             if (item.getItemId() == 0) { //check whether the selected menu item ID is 0
                 tvTranslatedText2.setText("Bye");
                 return true; //menu item successfully handled
