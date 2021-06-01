@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
             wordClicked = "2nd";
         }
 
+        menu.setHeaderTitle(wordClicked + " row is clicked");
+
         menu.add(0, 0, 0, "English");
         menu.add(0, 1, 1, "Italian");
     }
